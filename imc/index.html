@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo IMC</title>
+</head>
+<body>
+    <h1>Cálculo IMC</h1>
+    <input type="button" value="Calcular" onclick="calculo()">
+    <script>
+        function calculo(){
+    var pes = prompt('Informe seu peso');
+        alt = prompt('Informe sua altura');
+        imc = pes/(alt*alt);
+    
+    if(imc < 17){
+        alert("Você está muito abaixo do peso.");
+    }if(imc >= 17 & imc <= 18.5){
+        alert("Você está abaixo do peso");
+    }if(imc >= 18.5 & imc <= 24.99){
+        alert("Seu peso está normal");
+    }if(imc >= 25 &  imc <= 29.99){
+        alert("Você está acima do peso");
+    }if(imc >= 30 & imc <= 34.99){
+        alert("Obesidade I");
+    }if(imc >= 35 & imc >= 39.99){
+        alert("Obesidade II");
+    }   
+}     
+    </script>
+    
+</body>
+</html>
